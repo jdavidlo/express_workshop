@@ -26,10 +26,7 @@ app.use(express.urlencoded({extended: true}))
 // PUT - modificar 
 // DELETE - borrar
 
-app.get("/", (req, res, next) => {
-    res.status(200);
-    res.send("hola mundo")
-})
+app.get("/", index)
 
 app.use("/user", user)
 
